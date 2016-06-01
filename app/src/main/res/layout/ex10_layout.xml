@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:background="#2b8c3e">
+
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="用户名:   "
+            android:id="@+id/textView"
+             />
+        <EditText
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+              />
+        </TableRow>
+        <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="密    码:   "
+            android:id="@+id/textView1"
+             />
+        <EditText
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+             />
+        </TableRow>
+        <TableRow>
+        <Button
+
+            android:layout_height="wrap_content"
+            android:text="登   陆:"
+            android:id="@+id/btn1"
+            android:background="#344e39"
+            android:layout_marginRight="20dip"/>
+
+        <Button
+
+            android:layout_height="wrap_content"
+            android:text="退  出:"
+            android:id="@+id/btn2"
+            android:background="#3c4f32"
+            android:layout_marginRight="20dip"/>
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

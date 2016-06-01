@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/search" android:title="搜索" android:showAsAction="always"  android:actionViewClass="android.widget.SearchView" />
+    <item  android:title="选择字体大小" android:icon="@drawable/icon28">
+    </item>
+    <item android:id="@+id/normal_btn" android:title="这是一个菜单项"/>
+</menu>
