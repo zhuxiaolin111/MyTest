@@ -10,24 +10,11 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Zxl_01Activity">
-
-        </activity>
-        <activity android:name=".Zxl_02Acticity">
-
-        </activity>
-        <activity android:name=".Zxl_03Acticity">
-
-        </activity>
-        <activity android:name=".Zxl_04Acticity">
-
-        </activity>
-        <activity android:name=".Zxl_05Acticity">
-
-        </activity>
-        <activity android:name=".Zxl_06Activity">
-
-        </activity>
+        <activity android:name=".Zxl_01Activity"></activity>
+        <activity android:name=".Zxl_02Acticity"></activity>
+        <activity android:name=".Zxl_04Acticity"></activity>
+        <activity android:name=".Zxl_05Acticity"></activity>
+        <activity android:name=".Zxl_06Activity"></activity>
         <activity android:name=".Zxl_07Activity"></activity>
         <activity android:name=".Zxl_08Activity"></activity>
         <activity android:name=".Zxl_09Activity"></activity>
@@ -35,27 +22,44 @@
         <activity android:name=".Zxl_11Activity"></activity>
         <activity android:name=".web"></activity>
         <activity android:name=".qq_Activity"></activity>
-        <activity android:name=".Deng_Activity"></activity>
+        <activity
+            android:name=".Deng_Activity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
         <activity android:name=".jisuanqi_Activity"></activity>
         <activity android:name=".Feiji"></activity>
         <activity android:name=".login_Activity"></activity>
         <activity android:name=".MainActivity"></activity>
         <activity android:name=".Weather_Activity"></activity>
-        <activity android:name=".Zxl_12Activity"></activity>
-        <activity android:name=".Zxl_12Activity1"></activity>
-        <activity android:name=".Zxl_13Activity"></activity>
-        <activity android:name=".Zxl_14Activity"></activity>
-        <activity android:name=".Zxl_15Actyvity">
-
-        </activity>
-
-        <activity android:name=".HomeWork_Activity"  android:theme="@style/AppTheme.NoActionBar">
+        <activity
+            android:name=".Zxl_12Activity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".Zxl_12Activity1"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".Zxl_13Activity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".Zxl_14Activity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".Zxl_15Actyvity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".Zxl_16Activity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".Zxl_17Activity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".HomeWork_Activity"
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
