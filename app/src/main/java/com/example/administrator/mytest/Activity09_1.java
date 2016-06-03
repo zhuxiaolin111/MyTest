@@ -4,12 +4,17 @@ import android.app.Activity;
 import android.os.Bundle;
 
 /**
- * Created by Administrator on 2016/5/30.
+ * Created by hasee on 2016/5/26.
  */
-public class login_Activity extends Activity{
+public class Activity09_1 extends Activity{
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.login);
+        View091 view = new View091(this);
+        setContentView(view);
     }
+
+
 }

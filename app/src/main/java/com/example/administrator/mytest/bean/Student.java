@@ -4,9 +4,10 @@ package com.example.administrator.mytest.bean;
  * Created by Administrator on 16-5-18.
  */
 public class Student {
+    private int _id;
     private int pic;
     private String name;
-
+    private int age;
     public int getPic() {
         return pic;
     }
@@ -31,5 +32,11 @@ public class Student {
         this.age = age;
     }
 
-    private int age;
+    public int get_id() {
+        return _id;
+    }
+
+    public void set_id(int _id) {
+        this._id = _id;
+    }
 }

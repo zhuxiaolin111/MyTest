@@ -52,6 +52,17 @@
             android:name=".Zxl_17Activity"
             android:theme="@style/AppTheme.NoActionBar"></activity>
         <activity
+            android:name=".Zxl_18Activity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".Zxl_19Activity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".Zxl_20Activity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".Activity09_1" android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".BallActivity" android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
             android:name=".HomeWork_Activity"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
