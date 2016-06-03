@@ -49,12 +49,14 @@ public class View091 extends ImageView {
     List<Diji> dijis = new ArrayList<Diji>();
 
     Bitmap bitmap = BitmapFactory.decodeResource(getResources(),
-            R.drawable.airplane);
+            R.drawable.plane);
     Bitmap bitback = BitmapFactory.decodeResource(getResources(),
             R.drawable.back);
     Bitmap bit3 ;
     Bitmap bit4 =  BitmapFactory.decodeResource(getResources(),
             R.drawable.airplane);
+    Bitmap bit5= BitmapFactory.decodeResource(getResources(),
+            R.drawable.zidan);
 
     Bitmap bitboom = BitmapFactory.decodeResource(getResources(),R.drawable.ee); // 爆炸动画
 
@@ -114,18 +116,22 @@ public class View091 extends ImageView {
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
+
         Paint p = new Paint();
 
-       canvas.drawBitmap(Bitmap.createBitmap(bit3,0,bkimg,1080,1800),0,0,p);
+       canvas.drawBitmap(Bitmap.createBitmap(bit3,0,bkimg,1080,1920),0,0,p);
         bkimg +=20;
-        if(bkimg+1800>=bit3.getHeight()){
+        if(bkimg+1920>=bit3.getHeight()){
             bkimg = 0;
         }
+
         /*canvas.drawBitmap(bit3,0,0,p);*/
-        canvas.drawBitmap(bitmap, lastX, lastY, p);
+
+        canvas.drawBitmap(bitmap, lastX, lastY,p);
 
         p.setStrokeWidth(10);
-        p.setColor(Color.RED);
+
+        p.setColor(Color.BLUE);
 
 
 
@@ -193,7 +199,7 @@ public class View091 extends ImageView {
 
     public void setZidan(){
         Zidan zd = new Zidan();
-        zd.setX(lastX);
+        zd.setX(lastX+(airplanewidth/2)-10);
         zd.setY(lastY);
         zd.setSize(20);
         list.add(zd);
@@ -216,7 +222,7 @@ public class View091 extends ImageView {
             public void run() {
                 h.sendMessage(new Message());
             }
-        },0,80);
+        },0,100);
     }
 
     public void setdiji(){
@@ -233,7 +239,8 @@ public class View091 extends ImageView {
             @Override
             public void run() {
                 setdiji();
+
             }
-        },0,4000);
+        },0,1500);
     }
 }
