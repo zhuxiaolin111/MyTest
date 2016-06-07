@@ -68,22 +68,35 @@
         <activity
             android:name=".Zxl_20Activity"
             android:theme="@style/AppTheme.NoActionBar"></activity>
-        <activity android:name=".Activity09_1" android:theme="@style/AppTheme.NoActionBar"></activity>
-        <activity android:name=".BallActivity" android:theme="@style/AppTheme.NoActionBar"></activity>
-        <activity android:name=".Zxl_21Activity" android:theme="@style/AppTheme.NoActionBar"></activity>
-        <activity android:name=".zxl_22Activity" android:theme="@style/AppTheme.NoActionBar"></activity>
-        <activity android:name=".Zxl_23Activity" android:theme="@style/AppTheme.NoActionBar"></activity>
-        <activity android:name=".Zxl_25Activity" android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".Activity09_1"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".BallActivity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".Zxl_21Activity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".zxl_22Activity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".Zxl_23Activity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".Zxl_25Activity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
         <activity android:name=".Zxl_26Activity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-          <provider
-              android:authorities="com.example.administrator.mytest"
-              android:name=".Zxl_24Provider"
-              android:exported="true"/>
+
+        <provider
+            android:name=".Zxl_24Provider"
+            android:authorities="com.example.administrator.mytest"
+            android:exported="true" />
         <activity
             android:name=".HomeWork_Activity"
             android:theme="@style/AppTheme.NoActionBar">
