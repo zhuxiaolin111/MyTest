@@ -1,7 +1,6 @@
 package com.example.administrator.mytest;
 
 import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
@@ -16,17 +15,14 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileOutputStream;
-import java.io.IOException;
 import java.io.OutputStream;
-import java.io.OutputStreamWriter;
 
 /**
  * Created by Administrator on 2016/6/1.
  */
-public class A0_29zuoye extends Activity {
+public class Zxl_26Activity extends Activity {
     private ImageView iv;
     private Bitmap baseBitmap;
     private Canvas canvas;
@@ -36,7 +32,7 @@ public class A0_29zuoye extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.a0_29zuoye);
+        setContentView(R.layout.zxl_26layout);
         this.iv = (ImageView) this.findViewById(R.id.iv);
         // 创建一张空白图片
         baseBitmap = Bitmap.createBitmap(720, 1200, Bitmap.Config.ARGB_8888);
