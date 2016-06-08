@@ -20,7 +20,7 @@ public class Zxl_28Activity extends baseActivity {
         videoView= (VideoView) findViewById(R.id.video);
         mediaController=new MediaController(this);
 
-        File video= new File("/mnt/shell/emulated/0/Download/other/mm.mp4");//路径
+        File video= new File(getFilesDir().getAbsolutePath()+"/myvideo.mp4");//路径
 
          videoView.setVideoPath(video.getAbsolutePath());
          videoView.setMediaController(mediaController);
