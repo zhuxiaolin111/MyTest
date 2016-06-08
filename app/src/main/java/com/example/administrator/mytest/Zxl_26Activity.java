@@ -35,7 +35,7 @@ public class Zxl_26Activity extends Activity {
         setContentView(R.layout.zxl_26layout);
         this.iv = (ImageView) this.findViewById(R.id.iv);
         // 创建一张空白图片
-        baseBitmap = Bitmap.createBitmap(720, 1200, Bitmap.Config.ARGB_8888);
+        baseBitmap = Bitmap.createBitmap(1080, 1800, Bitmap.Config.ARGB_8888);
         // 创建一张画布
         canvas = new Canvas(baseBitmap);
         // 画布背景为灰色

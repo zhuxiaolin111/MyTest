@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.administrator.mytest">
-
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.BLUETOOTH" />
     <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
     <uses-permission android:name="android.permission.FLASHLIGHT" />
     <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
-
     <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -86,13 +87,20 @@
         <activity
             android:name=".Zxl_25Activity"
             android:theme="@style/AppTheme.NoActionBar"></activity>
-        <activity android:name=".Zxl_26Activity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+        <activity
+            android:name=".Zxl_26Activity"
+            android:theme="@style/AppTheme.NoActionBar">
         </activity>
-
+        <activity
+            android:name=".Zxl_27Activity"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".Zxl_28Activity"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity android:name=".Zxl_29Activity" android:theme="@style/AppTheme.NoActionBar">
+        </activity>
         <provider
             android:name=".Zxl_24Provider"
             android:authorities="com.example.administrator.mytest"
@@ -100,9 +108,10 @@
         <activity
             android:name=".HomeWork_Activity"
             android:theme="@style/AppTheme.NoActionBar">
-
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
-
     </application>
-
 </manifest>
