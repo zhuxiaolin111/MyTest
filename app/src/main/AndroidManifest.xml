@@ -22,19 +22,19 @@
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
-    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.GET_TASKS" />
     <uses-permission android:name="android.permission.WRITE_SETTINGS" />
 
     <application
+        android:name=".MyApp"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme"
-        android:name=".MyApp">
+        android:theme="@style/AppTheme">
         <activity android:name=".Zxl_01Activity"></activity>
         <activity android:name=".Zxl_02Acticity"></activity>
         <activity android:name=".Zxl_04Acticity"></activity>
@@ -117,20 +117,25 @@
             android:theme="@style/AppTheme.NoActionBar"></activity>
         <activity
             android:name=".Zxl_30Activity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".Zxl_31Activity"
             android:theme="@style/AppTheme.NoActionBar">
-        </activity>
-        <activity android:name=".Zxl_31Activity" android:theme="@style/AppTheme.NoActionBar">
 
         </activity>
         <activity android:name=".Zxl_32Activity_1"></activity>
-        <activity android:name=".Zxl_32Activity" android:theme="@style/AppTheme.NoActionBar">
-
-        </activity>
+        <activity
+            android:name=".Zxl_32Activity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".Zxl_33Activity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
 
         <provider
             android:name=".Zxl_24Provider"
             android:authorities="com.example.administrator.mytest"
             android:exported="true" />
+
         <activity
             android:name=".HomeWork_Activity"
             android:theme="@style/AppTheme.NoActionBar">
@@ -142,9 +147,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".GPS" android:theme="@style/AppTheme.NoActionBar">
+        <activity
+            android:name=".GPS"
+            android:theme="@style/AppTheme.NoActionBar">
 
         </activity>
+
         <meta-data
             android:name="com.baidu.lbsapi.API_KEY"
             android:value="Hca0O8zVzXtGhL6XSdA06BcRuj1GQu2F" />
