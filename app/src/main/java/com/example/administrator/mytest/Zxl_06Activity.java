@@ -104,7 +104,6 @@ public class Zxl_06Activity extends Activity {
             @Override
             public void onGroupExpanded(int groupPosition) {
             }
-
             @Override
             public void onGroupCollapsed(int groupPosition) {
             }
@@ -113,13 +112,11 @@ public class Zxl_06Activity extends Activity {
             public long getCombinedChildId(long groupId, long childId) {
                 return childId;
             }
-
             @Override
             public long getCombinedGroupId(long groupId) {
                 return groupId;
             }
         };
-
         ExpandableListView view = (ExpandableListView) findViewById(R.id.groupList);
         view.setAdapter(ela);
     }
