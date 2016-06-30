@@ -147,6 +147,9 @@
             android:theme="@style/AppTheme.NoActionBar">
 
         </activity>
+        <activity android:name=".xiaohua_Activity">
+
+        </activity>
 
         <meta-data
             android:name="com.baidu.lbsapi.API_KEY"
